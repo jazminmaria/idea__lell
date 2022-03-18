@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JMD - Contacto</title>
+    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="icon" href="../imagenes/logo.png">
+</head>
+<body>
+    <header>
+        <nav class="navbar flex-row container">
+            <picture class="logo">
+                <img src="../imagenes/logo.png" alt="Logo">
+            </picture>
+            <ul class="menu flex-row">
+                <li class="menu__item">
+                    <a href="../index.html" class="menu__link">Inicio</a>
+                </li >
+                <li class="menu__item">
+                    <a href="./about.html" class="menu__link">About</a>
+                </li>
+                <li class="menu__item">
+                    <a href="./servicios.html" class="menu__link">Servicios</a>
+                </li>
+                <li class="menu__item">
+                    <a href="./galeria.html" class="menu__link">Planes</a>
+                </li>
+                <li class="menu__item">
+                    <a href="./contacto.html" class="menu__link">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="section__contacto container">
+        <h1 class="section__contacto__titulo">Contactanos</h1>
+        <form class="contacto__formulario flex-column">
+            <div class="nombre">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" name="nombre" id="nombre">
+            </div>
+            <div class="telefono">
+                <label for="telefono">Teléfono:</label><br>
+                <input type="number" name="telefono" id="telefono">
+            </div>
+            <div class="email">
+                <label for="email">Email:</label><br>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="como">
+                <label for="conociste">Cómo nos conociste:</label><br>
+                <select name="conociste" id="conociste">
+                    <option value="Instagram">Instagram</option>
+                    <option value="Facebook">Facebook</option>
+                    <option value="Google">Búsqueda De Google</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </div>
+            <textarea class="mensaje" cols="150" rows="3">Tu Mensaje</textarea><br>
+            <button class= "contacto__button" type="submit">Enviar</button>
+        </form>
+    </section>
+    <footer class="flex-row">
+        <div class="footercontainer flex-column container">
+            <section class="redes"> <!--agregar links a las redes-->
+                <picture>
+                    <img src="../imagenes/Instagram.png" alt="Instagram">
+                </picture>
+                <picture>
+                    <img src="../imagenes/Facebook.png" alt="Facebook">
+                </picture>
+                <picture>
+                    <img src="../imagenes/Linkedin.png" alt="Linkedin">
+                </picture>
+            </section>
+            <article>Todos los derechos reservados</article>
+        </div>
+    </footer>
+</body>
+</html>
