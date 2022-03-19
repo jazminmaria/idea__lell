@@ -253,6 +253,8 @@ footer article{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     margin: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
     justify-items: center;
 }
 
@@ -263,7 +265,7 @@ footer article{
 }
 
 .planes__imagenes img:hover {
-    transform: scale(2)
+    transform: scale(1.7);
 }
 
 /*Contacto*/
@@ -374,6 +376,9 @@ footer article{
         margin-bottom: 1.3rem;
         max-width: 50%;
         max-height: 50%;
+    }
+    .planes__imagenes img:hover {
+        transform: scale(1.4);
     }
     .section__servicios__title{
         font-size: 3.5em;
