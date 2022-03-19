@@ -250,17 +250,20 @@ footer article{
 
 .planes__imagenes{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     margin: 1rem;
     justify-items: center;
 }
 
 .planes__imagenes picture{
     margin: 1rem;
-    max-width: 75%;
-    max-height: 50%;
+    max-width: 70%;
     align-content: center;
+}
+
+.planes__imagenes img:hover {
+    transform: scale(2)
 }
 
 /*Contacto*/
