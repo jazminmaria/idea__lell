@@ -49,6 +49,7 @@ body{
     display: grid;
     grid-template-rows: auto 1fr auto;
     grid-template-columns: 1fr;
+    font-family: var(--Font);
 }
 
 /*helpers*/
@@ -318,6 +319,36 @@ footer article{
     border-width: 0px;
     align-self: center;
     margin: 2rem;
+}
+/*bootstrap*/
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    background-color: var(--ColorOne);    
+}
+div.container-fluid{
+    background-color: #FF9292;
+}
+.navbar-light .navbar-toggler {
+    color: var(--ColorTwo);
+    border-color: var(--ColorTwo);
+}
+.navbar-toggler{
+    background-color: var(--ColorTwo);
+}
+
+.bg-light {
+    --bs-bg-opacity: 0;
+    }
+    .navbar-light .navbar-brand {
+        color: var(--ColorTwo);
+        text-transform: uppercase;
+        font-size: 2em;
+    }
+.nav-item{
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: var(--ColorTwo);
 }
 @media screen and (max-width: 768px) {
     
