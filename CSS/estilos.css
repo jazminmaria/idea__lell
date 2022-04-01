@@ -219,6 +219,12 @@ footer article{
     color: var(--ColorText);
     padding: 2rem;
 }
+.section__about h3{
+    color: var(--ColorOne);
+    font-size: 2em;
+    font-family: var(--Font);
+    text-align: center;
+}
 
 
 /*Servicios*/
