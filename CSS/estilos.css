@@ -25,7 +25,7 @@
 /*globals*/
 
 html{
-    font-family: var(--Font);
+    font-family: $Font;
     font-size: 62.5%;
 }
 
@@ -39,12 +39,12 @@ ul{
 }
 
 h1{
-    color: var(--ColorOne);
+    color: $ColorOne;
     text-transform: uppercase;
 }
 
 body{
-    background-color: var(--ColorZero);
+    background-color: $ColorZero;
     min-height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
@@ -69,9 +69,9 @@ body{
 }
 
 /*header*/
-
+/*
 header{
-    background-color: var(--ColorOne);
+    background-color: $ColorOne;
     grid-row: 1 / 2;
 }
 
@@ -94,7 +94,7 @@ header .menu{
 }
 
 header .menu__item{
-    border: 2px solid var(--ColorOne);
+    border: 2px solid $ColorOne;
 }
 
 header .menu__link{
@@ -102,21 +102,22 @@ header .menu__link{
 }
 
 .menu .menu__item:hover .menu__link{
-    color: var(--ColorOne);
-    background-color: var(--ColorTwo);
+    color: $ColorOne;
+    background-color: $ColorTwo;
 }
 
 .menu .menu__item .menu__link{
     font-size: 2em;
-    color: var(--ColorTwo);
+    color: $ColorTwo;
     text-transform: uppercase;
     padding: 1rem;
 }
 
+*/
 /*Footer*/
 
-footer{
-    background-color: var(--ColorTwo);
+/*footer{
+    background-color: $ColorTwo;
     padding: 0.6rem;
     grid-row: 9 / 10;
     bottom: 0;
@@ -132,7 +133,7 @@ footer{
 
 footer article{
     font-size: 1em;
-    color: var(--ColorText);
+    color: $ColorText;
 }
 .footercontainer .redes{
     flex-basis: 90%;
@@ -162,7 +163,7 @@ footer article{
 }
 
 .SectionHomeSubtitle{
-    color: var(--ColorOne);
+    color: $ColorOne;
     font-size: 6em;
     flex-basis: 45%;
     line-height: 6.4rem;
@@ -171,8 +172,10 @@ footer article{
 
 .SectionHomeArticle{
     font-size: 3em;
-    color: var(--ColorText);
+    color: $ColorText;
 }
+
+*/
 /*About*/
 
 .section__about{
@@ -184,7 +187,7 @@ footer article{
     font-size: 2em;
 }
 .section__about__trabajos{
-    background-color: var(--ColorTwo);
+    background-color: $ColorTwo;
     flex-basis: 35%;
     padding: 1rem;
     margin: 2rem;
@@ -192,7 +195,7 @@ footer article{
 
 .section__about__trabajos h3{
     font-size: 1.5em;
-    color: var(--ColorText);
+    color: $ColorText;
     text-align: center;
 }
 
@@ -206,7 +209,7 @@ footer article{
 }
 .section__about__trabajos p{
     font-size: 1.5em;
-    color: var(--ColorText);
+    color: $ColorText;
     text-align: center;
 }
 .section__about__title{
@@ -216,13 +219,13 @@ footer article{
 .section__about article{
     font-size: 2 em;
     text-align: center;
-    color: var(--ColorText);
+    color: $ColorText;
     padding: 2rem;
 }
 .section__about h3{
-    color: var(--ColorOne);
+    color: $ColorOne;
     font-size: 2em;
-    font-family: var(--Font);
+    font-family: $Font;
     text-align: center;
 }
 
@@ -236,7 +239,7 @@ footer article{
 .section__servicios__lista{
     flex-basis: 70%;
     font-size: 2em;
-    color: var(--ColorText);
+    color: $ColorText;
     text-align: center;
 }
 
@@ -284,8 +287,8 @@ footer article{
     margin: 1.3rem;
     font-size: 2rem;
     text-transform: uppercase;
-    color: var(--ColorText);
-    background-color: var(--ColorTwo);
+    color: $ColorText;
+    background-color: $ColorTwo;
 }
 .contacto__formulario div{
     margin: 1.3rem;
@@ -296,29 +299,29 @@ footer article{
 .contacto__formulario input{
     margin: 1.3rem;
     border-width: 0px;
-    background-color: var(--ColorZero);
+    background-color: $ColorZero;
 }
 .contacto__formulario select{
     margin: 1.3rem;
     border-width: 0px;
-    background-color: var(--ColorZero);
+    background-color: $ColorZero;
 }
 .contacto__formulario textarea{
     max-width: 400px;
     height: 200px;
     margin: 2rem;
     border-width: 0px;
-    background-color: var(--ColorZero);
+    background-color: $ColorZero;
 }
 .contacto__formulario textarea option{
-    color: var(--ColorText);
+    color: $ColorText;
 }
 .contacto__formulario button{
     width: 100px;
     height: 50px;
     font-size: 0.8em;
-    color: var(--ColorText);
-    background-color: var(--ColorZero);
+    color: $ColorText;
+    background-color: $ColorZero;
     text-transform: uppercase;
     padding: 1.3rem;
     border-width: 0px;

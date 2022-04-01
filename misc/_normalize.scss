@@ -1,0 +1,38 @@
+/*reset*/
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*globals*/
+
+html{
+    font-family: $Font;
+    font-size: 62.5%;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul{
+    list-style-type: none;
+}
+
+h1{
+    color: $ColorOne;
+    text-transform: uppercase;
+}
+
+body{
+    background-color: $ColorZero;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+}

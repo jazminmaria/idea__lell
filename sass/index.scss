@@ -1,0 +1,22 @@
+/*imports*/
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai&family=Roboto:wght@100&display=swap');
+
+/*MISCELANEOUS*/
+
+@import './misc/variables';
+@import './misc/animations';
+@import './misc/normalize';
+@import '../misc/mixins';
+
+/* PARTIALS */
+
+@import './partials/header';
+@import './partials/footer';
+
+/* VIEWS */
+
+@import './views/about';
+@import './views/contacto';
+@import './views/home';
+@import './views/servicios';
+@import './views/galeria';

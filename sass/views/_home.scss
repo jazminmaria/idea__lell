@@ -1,0 +1,26 @@
+.SectionHome{
+    align-items: center;
+    text-align: center;
+
+    article{
+        font-size: 3em;
+        color: $ColorText;
+    }
+    h1{
+        font-size: 15em;
+        flex-basis: 35%;
+        justify-content: center;
+        line-height: 15.5rem;
+    }
+    h2{
+        color: $ColorOne;
+        font-size: 6em;
+        flex-basis: 45%;
+        line-height: 6.4rem;
+        text-align: center;
+    }
+    div{
+        flex-basis: 50%;
+        justify-content: center;
+    }
+}

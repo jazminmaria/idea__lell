@@ -1,0 +1,118 @@
+/*imports*/
+@import url("https://fonts.googleapis.com/css2?family=Arima+Madurai&family=Roboto:wght@100&display=swap");
+/*MISCELANEOUS*/
+/*reset*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*globals*/
+html {
+  font-family: "Arima Madurai", cursive;
+  font-size: 62.5%; }
+
+a {
+  text-decoration: none;
+  display: inline-block; }
+
+ul {
+  list-style-type: none; }
+
+h1 {
+  color: #FF9292;
+  text-transform: uppercase; }
+
+body {
+  background-color: #FFF9B6;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr; }
+
+/*helpers*/
+.flex-row {
+  display: flex;
+  flex-direction: row; }
+
+.flex-column {
+  display: flex;
+  flex-direction: column; }
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto; }
+
+/* PARTIALS */
+header {
+  background-color: #FF9292;
+  grid-row: 1 / 2; }
+  header .logo {
+    flex-basis: 30%;
+    padding: 0.2rem; }
+  header .navbar {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem; }
+  header .menu {
+    flex-basis: 50%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem; }
+  header .menu__item:hover .menu__link {
+    color: #FF9292;
+    background-color: #FFE699; }
+  header .menu__item .menu__link {
+    font-size: 2em;
+    color: #FFE699;
+    text-transform: uppercase;
+    padding: 1rem; }
+  header .menu__link {
+    transition: ease-in-out cubic-bezier(0.23, 1, 0.32, 1); }
+  header .menu__item {
+    border: 2px solid #FF9292; }
+
+footer {
+  background-color: #FFE699;
+  padding: 0.6rem;
+  grid-row: 9 / 10;
+  bottom: 0;
+  width: 100vw; }
+  footer article {
+    font-size: 1em;
+    color: #9F9191; }
+
+.footercontainer {
+  flex-basis: 100%;
+  justify-items: center;
+  align-items: center;
+  height: 10vh; }
+  .footercontainer .redes {
+    flex-basis: 90%; }
+  .footercontainer picture {
+    flex-basis: 50%;
+    justify-content: center; }
+
+/* VIEWS */
+.SectionHome {
+  align-items: center;
+  text-align: center; }
+  .SectionHome article {
+    font-size: 3em;
+    color: #9F9191; }
+  .SectionHome h1 {
+    font-size: 15em;
+    flex-basis: 35%;
+    justify-content: center;
+    line-height: 15.5rem; }
+  .SectionHome h2 {
+    color: #FF9292;
+    font-size: 6em;
+    flex-basis: 45%;
+    line-height: 6.4rem;
+    text-align: center; }
+  .SectionHome div {
+    flex-basis: 50%;
+    justify-content: center; }
