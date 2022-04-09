@@ -1,0 +1,29 @@
+footer{
+    background-color: $ColorTwo;
+    padding: 0.6rem;
+    grid-row: 9 / 10;
+    bottom: 0;
+    width: 100vw;
+
+    article{
+        font-size: 1em;
+        color: $ColorText;
+    }
+}
+.footercontainer{
+    @include container (1080px, 0 auto);
+    @include flex-column (column, space-between, center);
+    flex-basis: 100%;
+    justify-items: center;
+    align-items: center;
+    height: 10vh;
+
+    .redes{
+        flex-basis: 90%;
+        justify-items: space-between;
+    }
+    picture{
+        flex-basis: 50%;
+        justify-content: center;
+    }
+}

@@ -1,6 +1,24 @@
 /*helpers*/
 
-.flex-row{
+@mixin flex-row ($direction: row, $justify: space-between, $align: center){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin flex-column ($direction: column, $justify: space-between, $align: center){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin container ($max-width: 1080px, $margin: 0 auto){
+    max-width: $max-width;
+    margin: $margin;
+}
+
+/*.flex-row{
     display: flex;
     flex-direction: row;
 }
@@ -13,4 +31,4 @@
 .container{
     max-width: 1080px;
     margin: 0 auto;
-}
+}*/
