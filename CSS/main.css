@@ -124,6 +124,134 @@ footer {
     justify-content: center; }
 
 /* VIEWS */
+.section__about {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem; }
+  .section__about__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 65%;
+    font-size: 2em; }
+  .section__about__trabajos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFE699;
+    flex-basis: 35%;
+    padding: 1rem;
+    margin: 2rem; }
+    .section__about__trabajos h3 {
+      font-size: 1.5em;
+      color: #9F9191;
+      text-align: center; }
+    .section__about__trabajos .trabajo1 {
+      margin: .8rem; }
+    .section__about__trabajos .trabajo2 {
+      margin: .8rem;
+      margin-top: 3rem; }
+    .section__about__trabajos p {
+      font-size: 1.5em;
+      color: #9F9191;
+      text-align: center; }
+  .section__about__title {
+    text-align: center;
+    font-size: 3.5em; }
+  .section__about article {
+    font-size: 2em;
+    text-align: center;
+    color: #9F9191;
+    padding: 2rem; }
+  .section__about h3 {
+    color: #FF9292;
+    font-size: 2em;
+    font-family: "Arima Madurai", cursive;
+    text-align: center; }
+
+@media screen and (max-width: 768px) {
+  .section__about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    .section__about__title {
+      font-size: 3em; }
+    .section__about__description {
+      font-size: 1.3em; } }
+
+.section__contacto {
+  max-width: 1080;
+  margin: 0 auto; }
+  .section__contacto__titulo {
+    font-size: 7em;
+    text-align: center; }
+
+.contacto__formulario {
+  padding-top: 20px;
+  margin: 1.3rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #9F9191;
+  background-color: #FFE699; }
+  .contacto__formulario div {
+    margin: 1.3rem; }
+  .contacto__formulario label {
+    margin: 1.3rem; }
+  .contacto__formulario input {
+    height: 20px;
+    margin: 1.3rem;
+    border-width: 0px;
+    background-color: #FFF9B6; }
+  .contacto__formulario select {
+    height: 20px;
+    margin: 1.3rem;
+    border-width: 0px;
+    background-color: #FFF9B6;
+    color: #9F9191; }
+  .contacto__formulario textarea {
+    max-width: 400px;
+    height: 200px;
+    margin: 2rem;
+    border-width: 0px;
+    background-color: #FFF9B6;
+    font-family: "Arima Madurai", cursive;
+    color: #9F9191; }
+    .contacto__formulario textarea option {
+      color: #9F9191; }
+  .contacto__formulario button {
+    width: 100px;
+    height: 50px;
+    font-size: 0.8em;
+    color: #9F9191;
+    background-color: #FFF9B6;
+    text-transform: uppercase;
+    padding: 1.3rem;
+    border-width: 0px;
+    align-self: center;
+    margin: 2rem; }
+
+@media screen and (max-width: 768px) {
+  .section__contacto__titulo {
+    font-size: 3.5em;
+    text-align: center; }
+  .contacto__formulario {
+    font-size: 1em;
+    margin: 0.5rem; }
+    .contacto__formulario textarea {
+      max-width: 200px;
+      max-height: 100px; }
+    .contacto__formulario button {
+      max-width: 50px;
+      max-height: 25px;
+      text-align: center; } }
+
 .SectionHome {
   max-width: 1080px;
   margin: 0 auto;
@@ -168,3 +296,78 @@ footer {
     line-height: 4.5rem; }
   .SectionHomeArticle {
     font-size: 2em; } }
+
+.section__servicios {
+  max-width: 1080px;
+  margin: auto 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-items: center; }
+  .section__servicios__title {
+    font-size: 7em;
+    text-align: center; }
+  .section__servicios__lista {
+    flex-basis: 70%;
+    font-size: 2em;
+    color: #9F9191;
+    text-align: center; }
+  .section__servicios__herramientas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; }
+  .section__servicios__contenido {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center; }
+
+@media screen and (max-width: 768px) {
+  .section__servicios__title {
+    font-size: 3.5em; }
+  .section__servicios__lista {
+    font-size: 1.3em; }
+  .section__servicios__contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .section__servicios__herramientas img {
+    max-width: 75%; } }
+
+.planes__titulo {
+  font-size: 7em;
+  text-align: center; }
+
+.planes__imagenes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin: 1rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  justify-items: center; }
+  .planes__imagenes picture {
+    margin: 1rem;
+    max-width: 70%;
+    align-content: center; }
+  .planes__imagenes img:hover {
+    transform: scale(1.5); }
+
+@media screen and (max-width: 768px) {
+  .planes__titulo {
+    font-size: 4em; }
+  .planes__imagenes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    align-items: center; }
+    .planes__imagenes picture {
+      margin-bottom: 1.3rem;
+      max-width: 50%;
+      max-height: 50%; }
+    .planes__imagenes img:hover {
+      transform: scale(1.15); } }

@@ -1,0 +1,43 @@
+.planes{
+    &__titulo{
+        font-size: 7em;
+        text-align: center;
+    }
+    &__imagenes{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        margin: 1rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        justify-items: center;
+        picture{
+            margin: 1rem;
+            max-width: 70%;
+            align-content: center;
+        }
+        img:hover {
+            transform: scale(1.5);
+        }
+    }
+}   
+@media screen and (max-width: 768px){
+    .planes{
+        &__titulo{
+            font-size: 4em;
+        }
+        &__imagenes{
+            @include flex-column (column);
+            justify-items: center;
+            align-items: center;
+            picture{
+                margin-bottom: 1.3rem;
+                max-width: 50%;
+                max-height: 50%;
+            }
+            img:hover{
+                transform: scale(1.15);
+            }
+        }
+    }
+}

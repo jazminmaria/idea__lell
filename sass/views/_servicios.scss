@@ -1,0 +1,44 @@
+.section__servicios{
+    @include container (1080px, auto 0);
+    @include flex-column (column);
+    align-items: center;
+    &__title{
+        font-size: 7em;
+        text-align: center;
+    }
+    &__lista{
+        flex-basis: 70%;
+        font-size: 2em;
+        color: $ColorText;
+        text-align: center;
+    }
+    &__herramientas{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;    
+    }
+    &__contenido{
+        @include flex-row (row);
+        align-items: center;
+    }
+}
+@media screen and (max-width: 768px){
+    .section__servicios{
+        &__title{
+            font-size: 3.5em;
+        }
+        &__lista{
+            font-size: 1.3em;
+        }
+        &__contenido{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__herramientas{
+            img{
+                max-width: 75%;
+            }
+        }
+    }
+}

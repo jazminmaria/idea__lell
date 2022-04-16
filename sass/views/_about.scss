@@ -1,0 +1,61 @@
+.section__about{
+    @include container (1080px, 0 auto);
+    @include flex-row (row);
+    padding: 1.5rem;
+    &__description{
+        @include flex-column (column);
+        flex-basis: 65%;
+        font-size: 2em;
+    }
+    &__trabajos{
+        @include flex-column (column);
+        background-color: $ColorTwo;
+        flex-basis: 35%;
+        padding: 1rem;
+        margin: 2rem;
+        h3{
+            font-size: 1.5em;
+            color: $ColorText;
+            text-align: center;
+        }
+        .trabajo1{
+            margin: .8rem;
+        }
+        .trabajo2{
+            margin: .8rem;
+            margin-top: 3rem;
+        }
+        p{
+            font-size: 1.5em;
+            color: $ColorText;
+            text-align: center;
+        }
+    }
+    &__title{
+        text-align: center;
+        font-size: 3.5em;
+    }
+    article{
+        font-size: 2em;
+        text-align: center;
+        color: $ColorText;
+        padding: 2rem;
+    }
+    h3{
+        color: $ColorOne;
+        font-size: 2em;
+        font-family: $Font;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 768px){
+    .section__about{
+        @include flex-column (column);
+        &__title{
+            font-size: 3em;
+        }
+        &__description{
+            font-size: 1.3em;
+        }
+    }
+}

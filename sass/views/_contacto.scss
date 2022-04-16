@@ -1,0 +1,79 @@
+.section__contacto{
+    @include container (1080, 0 auto);
+    &__titulo{
+        font-size: 7em;
+        text-align: center;
+    }
+}
+.contacto__formulario{
+    padding-top: 20px;
+    margin: 1.3rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: $ColorText;
+    background-color: $ColorTwo;
+    div {
+        margin: 1.3rem;
+    }
+    label{
+        margin: 1.3rem;
+    }
+    input {
+        height: 20px;
+        margin: 1.3rem;
+        border-width: 0px;
+        background-color: $ColorZero;
+    }
+    select{
+        height: 20px;
+        margin: 1.3rem;
+        border-width: 0px;
+        background-color: $ColorZero;
+        color: $ColorText;
+    }
+    textarea{
+        max-width: 400px;
+        height: 200px;
+        margin: 2rem;
+        border-width: 0px;
+        background-color: $ColorZero;        
+        font-family: $Font;
+        color: $ColorText;
+        option{
+            color: $ColorText;
+        }
+    }
+    button{
+        width: 100px;
+        height: 50px;
+        font-size: 0.8em;
+        color: $ColorText;
+        background-color: $ColorZero;
+        text-transform: uppercase;
+        padding: 1.3rem;
+        border-width: 0px;
+        align-self: center;
+        margin: 2rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .section__contacto{
+        &__titulo{
+            font-size: 3.5em;
+            text-align: center;
+        }
+    }
+    .contacto__formulario{
+        font-size: 1em;
+        margin: 0.5rem;
+        textarea {
+            max-width: 200px;
+            max-height: 100px;
+        }
+        button{
+            max-width: 50px;
+            max-height: 25px;
+            text-align: center;
+        }
+    }
+}
