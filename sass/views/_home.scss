@@ -26,3 +26,25 @@
         justify-content: center;
     }
 }
+@media screen and (max-width: 768px){
+    .SectionHome{
+        min-width: 320px;
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .SectionHomeTitle{
+        font-size: 12em;
+        line-height: 12.5rem;
+        order: 0;
+    }
+    .SectionHomeSubtitle{
+        font-size: 4em;
+        line-height: 4.5rem;
+    }
+    .SectionHomeArticle{
+        font-size: 2em;
+    }
+}
