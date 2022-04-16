@@ -223,10 +223,10 @@ footer article{
     padding: 2rem;
 }
 .section__about h3{
-    color: $ColorOne;
-    font-size: 2em;
-    font-family: $Font;
+    font-size: 2 em;
     text-align: center;
+    color: $ColorText;
+    padding: 2rem;
 }
 
 

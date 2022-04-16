@@ -1,0 +1,48 @@
+.section__about{
+    @include container (1080px, 0 auto);
+    padding: 1.5rem;
+    &__description{
+        flex-basis: 65%;
+        font-size: 2em;
+    }
+    &__trabajos{
+    background-color: $ColorTwo;
+    flex-basis: 35%;
+    padding: 1rem;
+    margin: 2rem;
+        h3{
+            font-size: 1.5em;
+            color: $ColorText;
+            text-align: center;
+        }
+        .trabajo1{
+            margin: .8rem;
+        }
+        .trabajo2{
+            @extend .trabajo1;
+            margin-top: 3rem;
+        }
+        p{
+            font-size: 1.5em;
+            color: $ColorText;
+            text-align: center;
+        }
+    }
+    &__title{
+        text-align: center;
+        font-size: 3.5em;
+    }
+    article{
+        font-size: 2 em;
+        text-align: center;
+        color: $ColorText;
+        padding: 2rem;
+    }
+    h3{
+        font-size: 2 em;
+        text-align: center;
+        color: $ColorText;
+        padding: 2rem;
+    }
+    
+}  

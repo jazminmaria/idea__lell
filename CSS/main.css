@@ -83,6 +83,18 @@ header {
   header .menu__item {
     border: 2px solid #FF9292; }
 
+@media screen and (max-width: 768px) {
+  header {
+    padding: 0.2rem; }
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center; }
+  .menu .menu__item .menu__link {
+    font-size: 0.8em; } }
+
 footer {
   background-color: #FFE699;
   padding: 0.6rem;
@@ -112,6 +124,120 @@ footer {
     justify-content: center; }
 
 /* VIEWS */
+.section__about {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 1.5rem; }
+  .section__about__description {
+    flex-basis: 65%;
+    font-size: 2em; }
+  .section__about__trabajos {
+    background-color: #FFE699;
+    flex-basis: 35%;
+    padding: 1rem;
+    margin: 2rem; }
+    .section__about__trabajos h3 {
+      font-size: 1.5em;
+      color: #9F9191;
+      text-align: center; }
+    .section__about__trabajos .trabajo1, .section__about__trabajos .trabajo2 {
+      margin: .8rem; }
+    .section__about__trabajos .trabajo2 {
+      margin-top: 3rem; }
+    .section__about__trabajos p {
+      font-size: 1.5em;
+      color: #9F9191;
+      text-align: center; }
+  .section__about__title {
+    text-align: center;
+    font-size: 3.5em; }
+  .section__about article {
+    font-size: 2 em;
+    text-align: center;
+    color: #9F9191;
+    padding: 2rem; }
+  .section__about h3 {
+    font-size: 2 em;
+    text-align: center;
+    color: #9F9191;
+    padding: 2rem; }
+
+.section__contacto {
+  max-width: 1080px;
+  margin: 0 auto; }
+  .section__contacto__titulo {
+    font-size: 7em;
+    text-align: center; }
+
+.contacto__formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.3rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #9F9191;
+  background-color: #FFE699; }
+  .contacto__formulario div {
+    margin: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    align-items: center; }
+  .contacto__formulario label {
+    margin: 1.3rem; }
+  .contacto__formulario input {
+    margin: 0;
+    border-width: 0px;
+    background-color: #FFF9B6;
+    height: 2.5rem; }
+  .contacto__formulario select {
+    margin: 0;
+    border-width: 0px;
+    background-color: #FFF9B6;
+    height: 2.5rem;
+    font: "Arima Madurai", cursive;
+    color: #9F9191; }
+  .contacto__formulario textarea {
+    max-width: 400px;
+    height: 200px;
+    margin: 2rem;
+    border-width: 0px;
+    background-color: #FFF9B6;
+    font-family: "Arima Madurai", cursive;
+    color: #9F9191;
+    border-color: #9F9191; }
+  .contacto__formulario button {
+    width: 100px;
+    height: 50px;
+    font-size: 0.8em;
+    color: #9F9191;
+    font-family: "Arima Madurai", cursive;
+    background-color: #FFF9B6;
+    text-transform: uppercase;
+    padding: 1.3rem;
+    border-width: 0px;
+    align-self: center;
+    margin: 2rem; }
+
+@media screen and (max-width: 768px) {
+  .section__contacto__titulo {
+    font-size: 3.5em;
+    text-align: center; }
+  .contacto__formulario {
+    font-size: 1em;
+    margin: 0.5rem; }
+  textarea {
+    max-width: 200px;
+    max-height: 100px; }
+  button {
+    max-width: 50px;
+    max-height: 25px;
+    text-align: center; } }
+
 .SectionHome {
   max-width: 1080px;
   margin: 0 auto;
@@ -139,31 +265,20 @@ footer {
     flex-basis: 50%;
     justify-content: center; }
 
-    nav.navbar.navbar-expand-lg.navbar-light.bg-light {
-      background-color: var(--ColorOne);    
-  }
-  div.container-fluid{
-      background-color: #FF9292;
-  }
-  .navbar-light .navbar-toggler {
-      color: var(--ColorTwo);
-      border-color: var(--ColorTwo);
-  }
-  .navbar-toggler{
-      background-color: var(--ColorTwo);
-  }
-  .bg-light {
-      --bs-bg-opacity: 0;
-      }
-      .navbar-light .navbar-brand {
-          color: var(--ColorTwo);
-          text-transform: uppercase;
-          font-size: 2em;
-      }
-  .nav-item{
-      text-transform: uppercase;
-      font-size: 2rem;
-  }
-  .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
-      color: var(--ColorTwo);
-  }
+@media screen and (max-width: 768px) {
+  .SectionHome {
+    min-width: 320px;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .SectionHomeTitle {
+    font-size: 12em;
+    line-height: 12.5rem;
+    order: 0; }
+  .SectionHomeSubtitle {
+    font-size: 4em;
+    line-height: 4.5rem; }
+  .SectionHomeArticle {
+    font-size: 2em; } }
