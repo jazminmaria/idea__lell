@@ -83,6 +83,18 @@ header {
   header .menu__item {
     border: 2px solid #FF9292; }
 
+@media screen and (max-width: 768px) {
+  header {
+    padding: 0.2rem; }
+  header .navbar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center; }
+  .menu .menu__item .menu__link {
+    font-size: 0.8em; } }
+
 footer {
   background-color: #FFE699;
   padding: 0.6rem;
